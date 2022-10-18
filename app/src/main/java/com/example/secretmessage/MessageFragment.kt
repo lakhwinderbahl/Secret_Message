@@ -14,17 +14,17 @@ class MessageFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val view1= inflater.inflate(R.layout.fragment_message, container, false)
+        val view2= inflater.inflate(R.layout.fragment_message, container, false)
 
-        val startButton1 = view1.findViewById<Button>(R.id.next)
+        val startButton0 = view2.findViewById<Button>(R.id.next)
 
-        startButton1.setOnClickListener{
-            view1.findNavController().navigate(R.id.action_messageFragment_to_welcomeFragment)
+        startButton0.setOnClickListener{
+            view2.findNavController().navigate(R.id.action_messageFragment_to_welcomeFragment)
         }
 
 
 
-        return view1
+        return view2
     }
 
 
